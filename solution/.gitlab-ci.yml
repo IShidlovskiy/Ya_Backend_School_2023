@@ -1,0 +1,18 @@
+stages:
+ - test
+
+unit-test-job:
+  stage: test
+  image: python:3.10
+  services:
+    - postgres
+  script:
+    - pip install -r requirements.txt
+    - python -m pytest
+
+lint-test-job:
+  stage: test
+  image: python:3.10
+  script:
+    - pip install flake8
+    - python -m flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics

@@ -1,0 +1,14 @@
+fastapi~=0.95.1
+uvicorn
+pytest~=7.3.1
+pytest-asyncio
+starlette~=0.26.1
+flake8
+requests
+httpx
+psycopg2-binary~=2.9.6
+SQLAlchemy~=2.0.12
+alembic~=1.10.4
+pydantic~=1.10.7
+python-dotenv~=1.0.0
+slowapi~=0.1.8
